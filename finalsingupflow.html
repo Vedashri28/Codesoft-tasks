@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            max-width: 900px;
+        }
+        .section {
+            flex: 1;
+            margin: 20px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: rgb(107, 107, 186);
+        }
+        .social-icons img {
+            width: 50px;
+            margin: 0 10px;
+        }
+        button {
+            color: white;
+            background-color: rgb(107, 107, 186);
+            font-size: large;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3e8e41;
+        }
+        .account-info {
+            font-size: large;
+            color: rgb(107, 107, 186);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            height: 30px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button[type="submit"] {
+            width: 100%;
+            height: 40px;
+            background-color: rgb(107, 107, 186);
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+        .privacy-policy {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section" id="welcome-section">
+            <h1>WELCOME</h1>
+            <p>Please login or sign up to continue using our app</p>
+            <img width="300px" src="screenshot.jpg" alt="Welcome Image">
+            <br>
+            <p>Enter via social networks</p>
+            <div class="social-icons">
+                <img src="facebook2.jpg" alt="Social Icon 1">
+                <img src="twitter2.jpg" alt="Social Icon 2">
+            </div>
+            <br>
+            <p>or login with email</p>
+            <br>
+            <button>Sign Up</button>
+            <br>
+            <p class="account-info">You already have an account? <a href="#">Login</a></p>
+        </div>
+        <div class="section" id="sign-up-section">
+            <h1>Sign Up</h1>
+            <p>Please register with email and sign up to continue using our app.</p>
+            <p>Enter via Social Networks</p>
+            <div class="social-icons">
+                <img src="facebook2.jpg" alt="Social Icon 1">
+                <img src="twitter2.jpg" alt="Social Icon 2">
+            </div>
+            <p>or login with email</p>
+            <form id="sign-in-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <div class="privacy-policy">
+                    <input type="checkbox" id="privacy-policy" name="privacy-policy" required>
+                    <label for="privacy-policy">I agree with the privacy policy</label>
+                </div>
+                
+                <button type="submit">Sign In</button>
+            </form>
+            <p class="account-info">You already have an account? <a href="#">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
